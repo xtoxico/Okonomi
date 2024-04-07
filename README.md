@@ -14,7 +14,7 @@
 1. Clona el repositorio:
 
 ```
-git clone https://github.com/tu-usuario/okonomi.git
+ gh repo clone xtoxico/Okonomi
 ```
 
 2. Instala las dependencias del backend:
