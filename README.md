@@ -1,4 +1,4 @@
-# økonomi
+# Okonomi
 
 økonomi es una aplicación diseñada para recopilar y analizar tickets y compras, con el objetivo de ofrecer un análisis financiero doméstico a los usuarios. Este proyecto está construido con tecnologías modernas como Nest.js para el backend y React.js para el frontend.
 
@@ -9,54 +9,43 @@
 - Interfaz de usuario para visualizar y analizar las compras almacenadas.
 - Funcionalidades de análisis para identificar tendencias financieras.
 
-## Instalación
 
-1. Clona el repositorio:
 
-```
- gh repo clone xtoxico/Okonomi
-```
 
-2. Instala las dependencias del backend:
 
-```
-cd backend
-npm install
-```
 
-3. Instala las dependencias del frontend:
+## Start the application
 
-```
-cd frontend
-npm install
-```
+Run `npx nx serve Okonomi` to start the development server. Happy coding!
 
-## Uso
 
-1. Configura las credenciales de Gmail en el backend.
-2. Inicia el servidor backend:
+## Build for production
+
+Run `npx nx build Okonomi` to build the application. The build artifacts are stored in the output directory (e.g. `dist/` or `build/`), ready to be deployed.
+
+## Running tasks
+
+To execute tasks with Nx use the following syntax:
 
 ```
-cd backend
-npm start
+npx nx <target> <project> <...options>
 ```
 
-3. Inicia la aplicación frontend:
+You can also run multiple targets:
 
 ```
-cd frontend
-npm start
+npx nx run-many -t <target1> <target2>
 ```
 
-4. Accede a la aplicación en tu navegador: `http://localhost:3000`
+..or add `-p` to filter specific projects
 
-## Contribución
+```
+npx nx run-many -t <target1> <target2> -p <proj1> <proj2>
+```
 
-¡Las contribuciones son bienvenidas! Si deseas contribuir a este proyecto, por favor abre un problema o envía una solicitud de extracción.
+Targets can be defined in the `package.json` or `projects.json`. Learn more [in the docs](https://nx.dev/features/run-tasks).
 
 ## Licencia
 
 Este proyecto está bajo la licencia [MIT](LICENSE).
 ```
-
-Asegúrate de reemplazar las secciones de instalación, uso, contribución y licencia con información específica de tu proyecto si es necesario. ¡Espero que te sea útil!
